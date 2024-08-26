@@ -29,8 +29,7 @@ graph LR
 
     subgraph clean[Data Cleanup]
         direction TB
-        CA[Fill invalid RestingBP data with Median ] --> CB[Fill invalid Cholesterol data with Zero] 
-        CB --> CC[Drop all invalid rows with invalid values]
+        CA[Fill invalid RestingBP data with Median] --> CB[Drop rows with invalid Cholesterol data] 
     end
     style clean color:#FCD900,rx:20,ry:20;
 
