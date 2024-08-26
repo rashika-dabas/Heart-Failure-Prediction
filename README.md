@@ -38,8 +38,7 @@ graph LR
         direction TB
         EA[MinMax Scaler] --> EB[Standard Scaler]
         EB --> EC[One Hot Encoding]
-        EC --> ED[Try pd.get_dummies]
-        ED --> EE[EDA]
+        EC --> ED[EDA]
     end
     style enc color:#FCD900,rx:20,ry:20;
 
@@ -50,12 +49,13 @@ graph LR
         BC[Decision Tree]
         BD[Random Forest]
         BE[Stochastic Gradient Descent]
-        BF[Fit]
+        BF[Fit and Evaluate]
         BA --> BF
         BB --> BF
         BC --> BF
         BD --> BF
         BE --> BF
+        BF --> BG[Dropping Features]
 
 
 
