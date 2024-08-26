@@ -34,11 +34,12 @@ graph LR
     style clean color:#FCD900,rx:20,ry:20;
 
 
-    subgraph enc[Encoding]
+    subgraph enc[Feature Engineering]
         direction TB
         EA[MinMax Scaler] --> EB[Standard Scaler]
         EB --> EC[One Hot Encoding]
-        EC --> ED[Drop One Hot Original Columns]
+        EC --> ED[Try pd.get_dummies]
+        ED --> EE[EDA]
     end
     style enc color:#FCD900,rx:20,ry:20;
 
