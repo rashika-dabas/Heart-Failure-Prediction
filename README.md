@@ -1,7 +1,7 @@
 # Heart-Failure-Prediction
 
 ## Training Pipeline
-> Color Theme: https://colorhunt.co/palette/001e6c035397e8630afcd900
+Color Theme: https://colorhunt.co/palette/001e6c035397e8630afcd900
 
 
 ```mermaid
